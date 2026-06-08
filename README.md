@@ -12,7 +12,7 @@ Máquina Atacante: Ubuntu Linux.
 
 Máquina Víctima: Metasploitable 2.
 
-Red: Configuración de direccionamiento IP estático interno para asegurar la persistencia y estabilidad de las pruebas (10.0.0.2).
+Conectividad de Red: Configuración de direccionamiento IP estático interno para asegurar la persistencia y estabilidad de las pruebas (10.0.0.2).
 
 2. Fase de Reconocimiento y Escaneo (Nmap)
 
