@@ -21,6 +21,10 @@ Se ejecutó un escaneo de puertos y detección de versiones detallado utilizando
 nmap -sV 10.0.0.2
 
 
+Hallazgos Críticos en el Escaneo:
+
+Puerto 1524/TCP (Open - bindshell): Se detectó el servicio histórico ingreslock. La versión del banner delató explícitamente que exponía una terminal con privilegios máximos (Metasploitable root shell) sin requerir ningún tipo de autenticación previa.
+
 Otros servicios obsoletos detectados: FTP (vsftpd 2.3.4), HTTP (Apache 2.2.8), MySQL (5.0.51a).
 
 3. Fase de Explotación y Acceso Inicial (Netcat)
@@ -55,6 +59,6 @@ Esto demostró una vulnerabilidad crítica de credenciales por defecto / contras
 
 🔒 Recomendaciones de Mitigación
 
-Cierre de Puertos Críticos: Deshabilitar de forma inmediata el servicio de bindshell en el puerto 1524 y bloquear any tráfico no autorizado mediante reglas de Firewall (iptables).
+Cierre de Puertos Críticos: Deshabilitar de forma inmediata el servicio de bindshell en el puerto 1524 y bloquear cualquier tráfico no autorizado mediante reglas de Firewall (iptables).
 
 Robustecimiento de Credenciales: Cambiar la política de contraseñas para prohibir claves por defecto y migrar los hashes de autenticación a algoritmos modernos y resistentes como SHA-512 o bcrypt.
