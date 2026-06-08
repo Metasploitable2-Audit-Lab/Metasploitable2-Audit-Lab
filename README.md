@@ -55,6 +55,6 @@ Esto demostró una vulnerabilidad crítica de credenciales por defecto / contras
 
 🔒 Recomendaciones de Mitigación
 
-Cierre de Puertos Críticos: Deshabilitar de forma inmediata el servicio de bindshell en el puerto 1524 y bloquear cualquier tráfico no autorizado mediante reglas de Firewall (iptables).
+Cierre de Puertos Críticos: Deshabilitar de forma inmediata el servicio de bindshell en el puerto 1524 y bloquear any tráfico no autorizado mediante reglas de Firewall (iptables).
 
 Robustecimiento de Credenciales: Cambiar la política de contraseñas para prohibir claves por defecto y migrar los hashes de autenticación a algoritmos modernos y resistentes como SHA-512 o bcrypt.
